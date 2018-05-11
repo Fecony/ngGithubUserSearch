@@ -21,8 +21,9 @@ export class SearchComponent implements OnInit {
     if(this.minLength <= this.searchStr.length) {
       this.service.getUser(this.searchStr)
         .subscribe(user => {
-          this.user = user
-          this.isLoaded = true
+          this.error403 = false;
+          this.user = user;
+          this.isLoaded = true;
         }, error => {
           this.error403 = true;
         })
