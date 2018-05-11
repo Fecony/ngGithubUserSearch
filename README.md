@@ -1,5 +1,5 @@
-Angular Material app
-Guthub User Search
+# Angular Material app
+# Github User Search
 
 # NgMaterialGitgub
 
