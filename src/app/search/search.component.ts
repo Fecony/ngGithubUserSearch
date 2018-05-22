@@ -24,7 +24,12 @@ export class SearchComponent implements OnInit {
           this.error403 = false;
           this.user = user;
           this.isLoaded = true;
-        }, error => {
+        }, error => { 
+        /* 
+          FIX
+          403 -> Github request limit
+          404 -> user not found 
+        */
           this.error403 = true;
         })
     }
